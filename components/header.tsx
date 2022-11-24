@@ -25,15 +25,6 @@ export default function Header() {
               <span className={styles.notSignedInText}>
                 You are not signed in
               </span>
-              <a
-                className={styles.buttonPrimary}
-                onClick={(e) => {
-                  e.preventDefault()
-                  signIn('twitter')
-                }}
-              >
-                Sign in
-              </a>
             </>
           )}
           {session?.user && (
